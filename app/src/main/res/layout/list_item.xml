@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:id="@+id/text_container"
+        android:background="@drawable/search_bar"
+        android:elevation="1dp"
+        tools:ignore="RtlSymmetry,UselessParent">
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_height="0dp"
+            tools:text=""
+            android:singleLine="true"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            tools:text="" />
+
+    </LinearLayout>
+
+</LinearLayout>

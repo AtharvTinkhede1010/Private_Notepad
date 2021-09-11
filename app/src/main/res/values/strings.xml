@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="menu_layout">Layout</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_delete">Delete</string>
+    <string name="sub">Subject</string>
+    <string name="fsub">Search notes</string>
+    <string name="dis">Discription</string>
+    <string name="editor_activity_title_new">Add a Note</string>
+    <string name="editor_activity_title_edit">Edit Note</string>
+    <string name="editor_activity_title_edit_pet">Edit Note</string>
+    <string name="delete_dialog_msg">Delete this Note?</string>
+    <string name="delete">Delete</string>
+    <string name="Back_button">Press again</string>
+    <string name="empty_view_subtitle_text">Get started by adding a note</string>
+    <string name="auth">Authenticate with fingerprint</string>
+</resources>

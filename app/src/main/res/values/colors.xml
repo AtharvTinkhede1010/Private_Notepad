@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4F5F5</color>
+    <color name="colorPrimaryDark">#F4F5F5</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorred">#DF0E0E</color>
+    <color name="light_grey2">#655E5E</color>
+    <color name="light_grey">#989696</color>
+    <color name="Search">#EAEAEA</color>
+    <color name="background">#F4F5F5</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="mine_shaft">#303030</color>
+
+
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.Setting">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/colorView"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="50dp" />
+
+        <View
+            android:id="@+id/colorView2"
+            android:layout_width="50dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <!--
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hex \nRNG:"
+            android:textColor="#000"
+            android:textSize="18sp" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:src="@drawable/colorpad" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="100"
+            android:background="@color/white"
+            android:text="@string/menu_cancel" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="100"
+            android:background="@color/white"
+            android:id="@+id/Default"
+            android:text="Default Color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="100"
+            android:background="@color/white"
+            android:text="Apply" />
+    </LinearLayout>
+</LinearLayout>

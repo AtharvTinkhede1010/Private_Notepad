@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editpad"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:hint="@string/sub"
+        android:background="@color/background"
+        android:inputType="textCapSentences"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/Dis"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/dis"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:background="@color/background"
+        android:importantForAutofill="no" />
+
+</LinearLayout>

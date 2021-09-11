@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.foreground_text">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <com.atharv.notepad.setting.CustomLockLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/Lock_screen"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/mine_shaft">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_above="@id/profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle2"
+                    android:src="@drawable/img_no_avatar" />
+
+                <TextView
+                    android:id="@id/profile_name"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/indicator_dots"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Welcome"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+
+                <com.andrognito.pinlockview.IndicatorDots
+                    android:id="@id/indicator_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/pin_lock_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="10dp" />
+
+
+                <com.andrognito.pinlockview.PinLockView
+                    android:id="@id/pin_lock_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:keypadButtonSize="36dp"
+                    app:keypadShowDeleteButton="false"
+                    app:keypadTextColor="@color/white"
+                    app:keypadTextSize="12dp" />
+            </RelativeLayout>
+
+        </com.atharv.notepad.setting.CustomLockLayout>
+
+        <com.atharv.notepad.setting.CustomLockLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Lock_screen2"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/mine_shaft">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_above="@id/profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle2"
+                    android:src="@drawable/img_no_avatar" />
+
+                <TextView
+                    android:id="@id/profile_name"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/indicator_dots"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Welcome"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+                <com.andrognito.pinlockview.IndicatorDots
+                    android:id="@id/indicator_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/pin_lock_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="10dp" />
+
+
+                <com.andrognito.pinlockview.PinLockView
+                    android:id="@+id/pin_lock_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:soundEffectsEnabled="false"
+                    app:keypadButtonSize="36dp"
+                    app:keypadShowDeleteButton="false"
+                    app:keypadTextColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    app:keypadTextSize="12dp" />
+            </RelativeLayout>
+        </com.atharv.notepad.setting.CustomLockLayout>
+    </LinearLayout><!--stackoverflow.com/questions/19163628/adding-custom-radio-buttons-in-android-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white"
+            android:text="White" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:id="@+id/black"
+            android:layout_height="wrap_content"
+            android:text="Black"/>
+
+
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,23 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+
+    <item
+        android:id="@+id/delete"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/delete_icon"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/cancel"
+        android:icon="@drawable/close_icon"
+        android:title="@string/menu_cancel"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/save_icon"
+        android:title="@string/menu_save"
+        app:showAsAction="always"
+        />
+</menu>
